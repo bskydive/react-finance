@@ -13,6 +13,10 @@ App to train react and manage my csv finance statistics files
  * can manage expency groups
  * can view diagrams for periods
 
+## Linting
+
+ * https://andrebnassis.medium.com/setting-eslint-on-a-react-typescript-project-2021-1190a43ffba
+
 ## Available Scripts
 
 In the project directory, you can run:
