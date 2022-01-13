@@ -100,7 +100,7 @@
   "bugs": {
     "url": "https://github.com/bskydive/react-finance/issues"
   },
-  "homepage": "https://github.com/bskydive/react-finance#readme",
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
