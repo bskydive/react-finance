@@ -89,7 +89,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --config ./config/jest.config.ts",
     "serve": "serve -s build -l 3000",
-    "lint": "eslint -c .eslintrc.js src"
+    "lint": "eslint -c .eslintrc.js src",
+    "lint-fix": "eslint -c .eslintrc.js src --fix"
   },
   "repository": {
     "type": "git",

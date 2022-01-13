@@ -57,6 +57,10 @@ module.exports = {
       { max: 50, skipBlankLines: true, skipComments: true },
     ], //https://eslint.org/docs/rules/max-lines-per-function
 
+    "@typescript-eslint/triple-slash-reference": "warn",
+    "promise/catch-or-return": "warn",
+    "promise/always-return": "warn",
+
     "functional/immutable-data": [
       "off",
       {
