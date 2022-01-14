@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
+import RoutesComponent from './components/Routes/MainRoutesComponent';
+import UploadComponent from './components/Upload/UploadComponent';
 
 function App() {
     return (
@@ -10,8 +12,8 @@ function App() {
             </header>
 
             <BrowserRouter>
-                <Navbar />
-                <AppRouter />
+                <UploadComponent />
+                <RoutesComponent />
             </BrowserRouter>
         </div>
     );
