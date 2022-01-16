@@ -82,6 +82,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-rxjs": "^5.0.1",
+    "prettier": "^2.5.1",
     "serve": "^13.0.2",
     "ts-node": "^10.4.0",
     "tsutils": "^3.21.0"
