@@ -1,0 +1,35 @@
+.app{
+    &-logo {
+        width: 200px;
+        
+    }
+    &-nav{
+        display: flex;
+        flex-direction: row;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-color: darkcyan;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-grow: 1;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                flex-grow: 0;
+                margin: 0;
+                padding: 0;
+                text-transform: capitalize;
+                list-style-type: none;
+            }
+        }
+    }
+}
