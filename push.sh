@@ -12,4 +12,4 @@ msg=$1
 
 [ -z ${msg} ] && git commit -am ${msg} || git commit -am "[AUTO] push all uncommited"
 
-git push origin master
+git push origin develop
