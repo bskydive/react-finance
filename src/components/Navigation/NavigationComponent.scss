@@ -29,6 +29,12 @@
                 padding: 0;
                 text-transform: capitalize;
                 list-style-type: none;
+                
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 4px solid white;
+                    margin-bottom: -4px;
+                }
             }
         }
     }

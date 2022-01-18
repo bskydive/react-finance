@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TransactionsList = function () {
+const TransactionsList: React.FC<unknown> = (): JSX.Element => {
     return (
         <div>
-            <h1>TransactionsList</h1>
+            <h3>TransactionsList</h3>
         </div>
     );
 };

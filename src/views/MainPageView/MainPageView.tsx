@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Outlet } from 'react-router-dom';
+import NavigationComponent from '../../components/Navigation/NavigationComponent';
 
 export class MainPageView extends Component {
     render() {
         return (
             <div>
-                <h3>mainpage</h3>
+                <NavigationComponent />
+                {/* <h3>mainpage</h3> */}
                 <Outlet />
             </div>
         );

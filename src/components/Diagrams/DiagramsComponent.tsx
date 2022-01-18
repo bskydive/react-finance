@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Diagrams = function () {
+const Diagrams: React.FC<unknown> = (): JSX.Element => {
     return (
         <div>
-            <h1>Diagrams</h1>
+            <h3>Diagrams</h3>
         </div>
     );
 };
