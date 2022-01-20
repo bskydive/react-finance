@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Outlet } from 'react-router-dom';
 
 export class NotFoundPageView extends Component {
     render() {

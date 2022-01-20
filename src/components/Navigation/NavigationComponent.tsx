@@ -7,14 +7,19 @@ export class NavigationComponent extends Component {
         return (
             <div>
                 <nav className="app-nav">
-                    <p className="app-logo">REFIN</p>
+                    {/* <p className="app-logo">REFIN</p> */}
                     <ul>
-                        <li><Link to='/'>Upload</Link></li>
-                        <li><Link to='/diagrams'>Diagrams</Link></li>
-                        <li><Link to='/transactions'>Transactions</Link></li>
+                        <li>
+                            <Link to="/">Upload</Link>
+                        </li>
+                        <li>
+                            <Link to="/diagrams">Diagrams</Link>
+                        </li>
+                        <li>
+                            <Link to="/transactions">Transactions</Link>
+                        </li>
                     </ul>
                 </nav>
-                
             </div>
         );
     }
