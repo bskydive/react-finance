@@ -1,23 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component, RefObject } from 'react';
+import './UploadComponent.scss';
 
-export class UploadComponent extends Component<{}, { path: string }> {
-    constructor(props: {} | Readonly<{}>) {
+
+/**
+ * https://reactjs.org/docs/refs-and-the-dom.html#creating-refs
+ */
+export class UploadComponent extends Component<unknown, { path: string }> {
+    private readonly inputOpenFileRef: RefObject<HTMLInputElement>;
+
+    constructor(props: unknown) {
         super(props);
         this.state = { path: 'выберите csv файл' };
         this.setPath = this.setPath.bind(this);
+        this.inputOpenFileRef = React.createRef();
     }
 
-    setPath(path: string) {
-        this.setState({ path });
+    setPath(event: any): void {
+        this.setState({ path: event?.target?.files[0]?.name || '' });
+        console.log('updated', event?.target);
     }
+
+    parseCSV() {
+        this.showOpenFileDlg();
+        console.log('parsed');
+    }
+
+    showOpenFileDlg = () => {
+        this.inputOpenFileRef?.current?.click();
+    };
 
     render() {
-        const path = this.state.path;
         return (
-            <div>
+            <div className="app-upload">
                 <h3>Upload</h3>
-                <input type="text" value={this.state.path}></input>
-                <button onClick={this.setPath}></button>
+                <input ref={this.inputOpenFileRef} type="file" style={{ display: 'none' }} onChange={this.setPath}/>
+                <label htmlFor="id_path">{this.state.path}</label>
+                <input id="id_path" type="text" value={this.state.path} onChange={this.setPath}></input>
+                <button onClick={this.showOpenFileDlg}>Parse</button>
             </div>
         );
     }
