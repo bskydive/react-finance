@@ -1,7 +1,6 @@
 import React, { Component, RefObject } from 'react';
 import './UploadComponent.scss';
 
-
 /**
  * https://reactjs.org/docs/refs-and-the-dom.html#creating-refs
  */
@@ -33,7 +32,7 @@ export class UploadComponent extends Component<unknown, { path: string }> {
         return (
             <div className="app-upload">
                 <h3>Upload</h3>
-                <input ref={this.inputOpenFileRef} type="file" style={{ display: 'none' }} onChange={this.setPath}/>
+                <input ref={this.inputOpenFileRef} type="file" style={{ display: 'none' }} onChange={this.setPath} />
                 <label htmlFor="id_path">{this.state.path}</label>
                 <input id="id_path" type="text" value={this.state.path} onChange={this.setPath}></input>
                 <button onClick={this.showOpenFileDlg}>Parse</button>
