@@ -38,7 +38,7 @@ module.exports = {
         complexity: ['warn', { max: 10 }], // https://eslint.org/docs/rules/complexity
         'max-depth': ['error', 4], // https://eslint.org/docs/rules/max-depth
         'max-params': ['error', 5], // https://eslint.org/docs/rules/max-params
-        'max-statements': ['error', 10], // https://eslint.org/docs/rules/max-statements
+        'max-statements': ['error', 20], // https://eslint.org/docs/rules/max-statements
         'max-lines': ['error', { max: 400, skipBlankLines: true, skipComments: true }], // https://eslint.org/docs/rules/max-lines
         'max-lines-per-function': ['error', { max: 50, skipBlankLines: true, skipComments: true }], //https://eslint.org/docs/rules/max-lines-per-function
 
@@ -73,5 +73,6 @@ module.exports = {
         'functional/no-try-statement': 'off',
         'functional/no-method-signature': 'warn',
         'functional/prefer-tacit': 'off', // a = () => false
+        'prefer-const': 'off'
     },
 };
